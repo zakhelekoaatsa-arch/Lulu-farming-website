@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Lulu Farming</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background-color: #f4f6f4;
+      color: #333;
+    }
+
+    header {
+      background-color: #2e7d32;
+      color: white;
+      padding: 25px;
+      text-align: center;
+    }
+
+    section {
+      padding: 30px 20px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    h2 {
+      color: #2e7d32;
+      border-bottom: 2px solid #2e7d32;
+      padding-bottom: 10px;
+      margin-bottom: 20px;
+    }
+
+    p {
+      line-height: 1.6;
+    }
+
+    /* ===== PRODUCT CATALOG SYSTEM ===== */
+    .product-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      margin-top: 20px;
+    }
+
+    .product-card {
+      background: #ffffff;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .product-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .product-card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .product-info {
+      padding: 15px;
+      text-align: center;
+      flex-grow: 1;
+    }
+
+    .buy-btn {
+      background-color: #2e7d32;
+      color: white;
+      border: none;
+      padding: 12px;
+      border-radius: 5px;
+      cursor: pointer;
+      width: 100%;
+      font-weight: bold;
+    }
+
+    .buy-btn:hover {
+      background-color: #1b5e20;
+    }
+
+    footer {
+      background: #2e7d32;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <h1>🌱 Lulu Farming</h1>
+  <p>Sustainable Farming • Quality Products • Direct to You</p>
+</header>
+
+<section>
+  <p>
+    Lulu Farming is a modern agricultural business focused on sustainable and responsible farming.
+    We supply quality farm products directly to customers through simple and reliable ordering.
+  </p>
+</section>
+
+<!-- ================= HYDROPONIC FARMING ================= -->
+<section>
+  <h2>💧 Hydroponic Farming</h2>
+  <p>Fresh produce grown in a clean, soil-less, controlled environment.</p>
+
+  <div class="product-grid">
+
+    <!-- TEMPLATE: Hydroponic Product -->
+    <div class="product-card">
+      <img src="images/hydroponics/strawberry.jpg" alt="Hydroponic Strawberries">
+      <div class="product-info">
+        <h3>Fresh Strawberries</h3>
+        <button class="buy-btn"
+          onclick="window.open('https://wa.me/26658852237?text=I%20would%20like%20to%20order%20hydroponic%20strawberries')">
+          Order on WhatsApp
+        </button>
+      </div>
+    </div>
+
+    <div class="product-card">
+      <img src="images/hydroponics/tomato.jpg" alt="Hydroponic Tomatoes">
+      <div class="product-info">
+        <h3>Hydroponic Tomatoes</h3>
+        <button class="buy-btn"
+          onclick="window.open('https://wa.me/26658852237?text=I%20would%20like%20to%20order%20hydroponic%20tomatoes')">
+          Order on WhatsApp
+        </button>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ================= DRY CROPS ================= -->
+<section>
+  <h2>🌾 Dry Crop Farming</h2>
+
+  <div class="product-grid">
+
+    <div class="product-card">
+      <img src="images/dry-crops/maize.jpg" alt="Maize">
+      <div class="product-info">
+        <h3>Premium Maize</h3>
+        <button class="buy-btn"
+          onclick="window.open('https://wa.me/26658852237?text=I%20would%20like%20to%20order%20maize')">
+          Order on WhatsApp
+        </button>
+      </div>
+    </div>
+
+    <div class="product-card">
+      <img src="images/dry-crops/cabbage.jpg" alt="Cabbage">
+      <div class="product-info">
+        <h3>Fresh Cabbage</h3>
+        <button class="buy-btn"
+          onclick="window.open('https://wa.me/26658852237?text=I%20would%20like%20to%20order%20cabbage')">
+          Order on WhatsApp
+        </button>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ================= POULTRY ================= -->
+<section>
+  <h2>🐔 Poultry Farming</h2>
+
+  <div class="product-grid">
+
+    <div class="product-card">
+      <img src="images/poultry/chicken.jpg" alt="Pasture Raised Chicken">
+      <div class="product-info">
+        <h3>Pasture Raised Chicken</h3>
+        <button class="buy-btn"
+          onclick="window.open('https://wa.me/26658852237?text=I%20would%20like%20to%20order%20pasture%20raised%20chicken')">
+          Order on WhatsApp
+        </button>
+      </div>
+    </div>
+
+    <div class="product-card">
+      <img src="images/poultry/chicks.jpg" alt="Day-old Chicks">
+      <div class="product-info">
+        <h3>Day-old Chicks</h3>
+        <button class="buy-btn"
+          onclick="window.open('https://wa.me/26658852237?text=I%20would%20like%20to%20enquire%20about%20chicks')">
+          Enquire on WhatsApp
+        </button>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ================= DAIRY ================= -->
+<section>
+  <h2>🥛 Dairy Farming</h2>
+
+  <div class="product-grid">
+
+    <div class="product-card">
+      <img src="images/dairy/butter.jpg" alt="Farm Butter">
+      <div class="product-info">
+        <h3>Fresh Farm Butter</h3>
+        <button class="buy-btn"
+          onclick="window.open('https://wa.me/26658852237?text=I%20would%20like%20to%20order%20farm%20butter')">
+          Order on WhatsApp
+        </button>
+      </div>
+    </div>
+
+    <div class="product-card">
+      <img src="images/dairy/ice-cream.jpg" alt="Ice Cream">
+      <div class="product-info">
+        <h3>Homemade Ice Cream</h3>
+        <button class="buy-btn"
+          onclick="window.open('https://wa.me/26658852237?text=I%20would%20like%20to%20order%20ice%20cream')">
+          Order on WhatsApp
+        </button>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ================= LEATHER ================= -->
+<section>
+  <h2>🐄 Cattle Skin & Leather</h2>
+
+  <div class="product-grid">
+
+    <div class="product-card">
+      <img src="images/leather/cattle-hide.jpg" alt="Cattle Hides">
+      <div class="product-info">
+        <h3>Quality Cattle Hides</h3>
+        <button class="buy-btn"
+          onclick="window.open('https://wa.me/26658852237?text=I%20would%20like%20to%20enquire%20about%20cattle%20skin%20products')">
+          Enquire on WhatsApp
+        </button>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<footer>
+  <p>Contact: nseitlheko@gmail.com | WhatsApp: +266 5885 2237</p>
+  <p>&copy; 2026 Lulu Farming</p>
+</footer>
+
+</body>
+</html>
